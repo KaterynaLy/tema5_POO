@@ -11,15 +11,15 @@ abstract class Animal
     public function makeSound()
     {
         echo "Sonido : " . PHP_EOL;
+
     }
 }
-interface SonidoInterface
+interface SonidoAnimal
 {
     function makeSound();
-
 }
 
-class Perro extends Animal implements SonidoInterface
+class Perro extends Animal implements SonidoAnimal
 {
     public function makeSound()
     {
@@ -28,7 +28,7 @@ class Perro extends Animal implements SonidoInterface
 }
 
 
-class Gato extends Animal implements SonidoInterface
+class Gato extends Animal implements SonidoAnimal
 {
     public function makeSound()
     {

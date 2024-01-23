@@ -5,7 +5,7 @@ echo "Área del Rectángulo: " . $rectangulo->calcularArea() . PHP_EOL;
 
 $triangulo = new Triangulo(4, 6);
 echo "Área del Triángulo: " . $triangulo->calcularArea() . PHP_EOL;
-class Shape
+abstract class Shape
 {
     protected $ancho;
     protected $alto;

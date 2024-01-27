@@ -1,10 +1,4 @@
 <?php
-
-$rectangulo = new Rectangulo(7, 10);
-echo "Área del Rectángulo: " . $rectangulo->calcularArea() . PHP_EOL;
-
-$triangulo = new Triangulo(4, 6);
-echo "Área del Triángulo: " . $triangulo->calcularArea() . PHP_EOL;
 abstract class Shape
 {
     protected $ancho;
@@ -35,3 +29,8 @@ class Rectangulo extends Shape
         return $this->alto * $this->ancho;
     }
 }
+$rectangulo = new Rectangulo(7, 10);
+echo "Área del Rectángulo: " . $rectangulo->calcularArea() . PHP_EOL;
+
+$triangulo = new Triangulo(4, 6);
+echo "Área del Triángulo: " . $triangulo->calcularArea() . PHP_EOL;

@@ -8,11 +8,6 @@ abstract class Animal
     {
         $this->nombre = $nombre;
     }
-    public function makeSound()
-    {
-        echo "Sonido : " . PHP_EOL;
-
-    }
 }
 interface SonidoAnimal
 {
